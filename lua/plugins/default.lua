@@ -20,8 +20,6 @@ return {
   --   },
   -- },
   --
-  -- UI
-  { import = "lazyvim.plugins.extras.ui.alpha" },
 
   -- Testing / Debugging
   { import = "lazyvim.plugins.extras.dap.core" },
