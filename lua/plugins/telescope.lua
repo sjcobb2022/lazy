@@ -12,7 +12,7 @@ return {
       -- disable the keymap to grep files
       { "<leader>/", false },
       -- change a keymap
-      { "<leader>fw", "<cmd>Telescope live_grep", "Find Words" },
+      { "<leader>fw", "<cmd>Telescope live_grep<cr>", "Find Words" },
     },
   },
 }
