@@ -12,7 +12,24 @@ return {
       -- disable the keymap to grep files
       { "<leader>/", false },
       -- change a keymap
-      { "<leader>fw", "<cmd>Telescope live_grep<cr>", "Find Words" },
+      {
+        "<leader>fw",
+        function()
+          require("telescope.builtin").find_files()
+        end,
+        "Find words",
+      },
+      {
+        "<leader>fW",
+        function()
+          require("telescope.builtin").live_grep({
+            additional_args = function(args)
+              return vim.list_extend(args, { "--hidden", "--no-ignore" })
+            end,
+          })
+        end,
+        "Find words in all files",
+      },
     },
   },
 }
