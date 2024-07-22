@@ -15,7 +15,7 @@ return {
       {
         "<leader>fw",
         function()
-          require("telescope.builtin").find_files()
+          require("telescope.builtin").live_grep()
         end,
         "Find words",
       },
