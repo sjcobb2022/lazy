@@ -26,7 +26,6 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  news = { lazy = false, lazyvim = false, neovim = false },
   install = { colorscheme = { "tokyonight", "habamax" } },
   checker = { enabled = true, notify = false }, -- automatically check for plugin updates
   performance = {

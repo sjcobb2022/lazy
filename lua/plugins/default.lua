@@ -1,5 +1,13 @@
 return {
-
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      news = {
+        lazyvim = false,
+        neovim = false,
+      },
+    },
+  },
   -- add symbols-outline
   {
     "simrat39/symbols-outline.nvim",
